@@ -30,4 +30,16 @@ protected:
 	afx_msg void OnPaint();
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
+public:
+
+  CString m_macauto;
+  CString m_macspec;
+  CString m_idauto;
+  CString m_idsped;
+  CString m_idlast;
+  bool m_radiomac;
+  int m_radioid;
+  CString m_cstrport;
+  CString m_cstrstatus;
+  CString m_cstrareaid;
 };
