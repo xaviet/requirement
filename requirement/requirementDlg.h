@@ -3,6 +3,7 @@
 //
 
 #pragma once
+#include "afxwin.h"
 
 
 // CrequirementDlg dialog
@@ -35,11 +36,17 @@ public:
   CString m_macauto;
   CString m_macspec;
   CString m_idauto;
-  CString m_idsped;
+  CString m_idspec;
   CString m_idlast;
-  bool m_radiomac;
-  int m_radioid;
   CString m_cstrport;
   CString m_cstrstatus;
   CString m_cstrareaid;
+  CEdit m_editmacspec;
+  CEdit m_editidspec;
+  int m_radiomac;
+  int m_radioid;
+  afx_msg void OnClickedRadio1();
+  afx_msg void OnClickedRadio3();
+  afx_msg void OnBnClickedRadio2();
+  afx_msg void OnBnClickedRadio4();
 };
